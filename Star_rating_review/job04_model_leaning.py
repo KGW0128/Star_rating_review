@@ -6,10 +6,10 @@ from tensorflow.python.keras.saving.saved_model.load import metrics  # 메트릭
 from keras.callbacks import EarlyStopping  # 학습 조기 종료 콜백 함수
 
 # 데이터 로드
-X_train = np.load('C:/workspace/Star_rating_review/Star_rating_review/crawling_data/review_data_X_train_max_129_wordsize_15845.npy', allow_pickle=True)
-X_test = np.load('C:/workspace/Star_rating_review/Star_rating_review/crawling_data/review_data_X_test_max_129_wordsize_15845.npy', allow_pickle=True)
-Y_train = np.load('C:/workspace/Star_rating_review/Star_rating_review/crawling_data/review_data_Y_train_max_129_wordsize_15845.npy', allow_pickle=True)
-Y_test = np.load('C:/workspace/Star_rating_review/Star_rating_review/crawling_data/review_data_Y_test_max_129_wordsize_15845.npy', allow_pickle=True)
+X_train = np.load('/Star_rating_review/최종 데이터/review_data_X_train_max_129_wordsize_15845.npy', allow_pickle=True)
+X_test = np.load('/Star_rating_review/최종 데이터/review_data_X_test_max_129_wordsize_15845.npy', allow_pickle=True)
+Y_train = np.load('/Star_rating_review/최종 데이터/review_data_Y_train_max_129_wordsize_15845.npy', allow_pickle=True)
+Y_test = np.load('/Star_rating_review/최종 데이터/review_data_Y_test_max_129_wordsize_15845.npy', allow_pickle=True)
 
 # 원-핫 인코딩된 Y 데이터를 단일 열로 변환
 Y_train = Y_train[:, 1]  # 두 번째 열만 사용 (1에 대한 확률)
