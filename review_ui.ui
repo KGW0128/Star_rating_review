@@ -25,38 +25,6 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>0</y>
-     <width>421</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item alignment="Qt::AlignHCenter">
-     <widget class="QLabel" name="label">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>1</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>40</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>리뷰 별점 측정기</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -208,13 +176,13 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>20</pointsize>
+     <pointsize>13</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>예측별점:</string>
+    <string>실제 별점:</string>
    </property>
   </widget>
   <widget class="QLabel" name="AI_star_print_label">
@@ -257,13 +225,13 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>20</pointsize>
+     <pointsize>13</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>입력별점:</string>
+    <string>사용자 별점:</string>
    </property>
   </widget>
   <widget class="QLabel" name="my_star_label">
@@ -308,6 +276,32 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;텍스트를 &lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;입력하세요&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>0</y>
+     <width>338</width>
+     <height>109</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>1</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>리뷰 별점 분석기</string>
    </property>
   </widget>
  </widget>

@@ -9,10 +9,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer  # 텍스트 토크나
 from tensorflow.keras.preprocessing.sequence import pad_sequences  # 시퀀스 패딩
 
 # UI 파일 불러오기
-form_window = uic.loadUiType('C:/workspace/Star_rating_review/review_ui.ui')[0]
+form_window = uic.loadUiType('C:/PyCharm_workspace/Star_rating_review/review_ui.ui')[0]
 
 # 토크나이저 모델 불러오기
-with open('C:/workspace/Star_rating_review/Star_rating_review/models/review_token_MAX_129.pickle', 'rb') as handle:
+with open('C:/PyCharm_workspace/Star_rating_review/Star_rating_review/models/review_token_MAX_129.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # 메인 클래스 정의
@@ -23,7 +23,7 @@ class Exam(QWidget, form_window):
 
         # 학습된 모델 불러오기
         self.model = load_model(
-            'C:/workspace/Star_rating_review/Star_rating_review/models/review_data_classfication_model_0.9109051823616028.h5')
+            'C:/PyCharm_workspace/Star_rating_review/Star_rating_review/models/review_data_classfication_model_0.9109051823616028.h5')
 
         # 버튼 클릭 이벤트 연결
         self.review_btn.clicked.connect(self.btn_clicked_slot)
